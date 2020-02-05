@@ -1,7 +1,7 @@
 export function Player(name, total, turn, roll, active){
   this.name = name;
   this.total = total;
-  this.turn = turn;
+  this.turn = turn
   this.roll = roll;
   this.active = active;
 }
@@ -26,7 +26,7 @@ Player.prototype.totaler = function() {
 Player.prototype.switch = function() {
   if (this.active === true) {
     this.active = false;
-    
+
   } else {
     this.active = true;
   }
